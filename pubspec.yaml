@@ -1,8 +1,8 @@
 name: dart_commons
 description: common functions for dart
 version: 0.0.1
-author:
-homepage:
+author: ahmed beheiri
+homepage: https://github.com/AhmedBeheiri/dart_commons
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
