@@ -44,7 +44,7 @@ extension StringAnko on String {
 
   //? Show Snack BAr with Passed String as Message
 
-  void ShowSnackBar(
+  void showSnackBar(
     BuildContext context, {
     Duration duration = const Duration(milliseconds: 500),
   }) {

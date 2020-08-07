@@ -62,10 +62,10 @@ snack bars can be shown on String and On BuildContext
 
 ```
 // If you called show snack bar on context you need to provide the text  
-    context.ShowSnackBar('text',
+    context.showSnackBar('text',
         duration: Duration(milliseconds: 500));
 // If you called show snack bar on string you need to provide the build context  
-        'this is example'.ShowSnackBar(context,duration: Duration(milliseconds: 500));
+        'this is example'.showSnackBar(context,duration: Duration(milliseconds: 500));
 ```
 
 # String Commons
@@ -157,7 +157,7 @@ List<int> list = [10, 11, 15];
 
 # Built With
 
-* [Flutter](http://www.flutter.dev/) - the framework built for
+* [Flutter](https://www.flutter.dev/) - the framework built for
 
 # Contributing
 

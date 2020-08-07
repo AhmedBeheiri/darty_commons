@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'package:darty_commons/test_widget.dart';
+import 'package:darty_commons/dart_commons.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
-import 'dart_commons.dart';
+import 'test_widget.dart';
 
 void main() {
   runApp(MyApp());

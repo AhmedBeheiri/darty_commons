@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'dart_commons.dart';
+import 'package:darty_commons/dart_commons.dart';
 
 class TestWidget extends StatelessWidget {
   TextEditingController _controller = TextEditingController();
@@ -25,7 +25,7 @@ class TestWidget extends StatelessWidget {
         builder: (context) {
           300.delay(
               onCompleted: () {
-                'test snack'.ShowSnackBar(context);
+                'test snack'.showSnackBar(context);
               },
               milliseconds: true);
 
