@@ -33,7 +33,7 @@ sdk: ">=2.7.0 <3.0.0"
 
 ### How To Use
 
-## Logging
+# Logging
 
 Logging Uses the `logging` package so you nedd to add this in the start of your application
 
@@ -56,7 +56,7 @@ you can use the logging as follows
     context.log('message');
 ```
 
-## SnackBar
+# SnackBar
 snack bars can be shown on String and On BuildContext
  `duration` param is optional
 
@@ -68,30 +68,30 @@ snack bars can be shown on String and On BuildContext
         'this is example'.ShowSnackBar(context,duration: Duration(milliseconds: 500));
 ```
 
-## String Commons
+# String Commons
 
-# Call
+## Call
 
 Call Function To Call Phone Number 
 ```
 '+20123456789'.call();
 ```
 
-# Dial 
+## Dial 
 dial opens the dial app with number in place without direct call
 ```
  '+20123456789'.dial();
 ```
 
 
-# ToInt , ToDouble
+## ToInt , ToDouble
 
 converts string to int and to double directly 
 ```
 '90'.toInt;
 '90'.toDouble;
 ```
-# Email
+## Email
 
 Send Email with the String as the email body 
 ```
@@ -99,20 +99,20 @@ Send Email with the String as the email body
         .email('test@gmail.com', subject: 'test email function');
 ```
 
-# Browse
+## Browse
 open link in browser
 ```
 'https://www.flutter.dev'.browse();
 ```
 
-# Share
+## Share
 Share Passed Text
 
 ```
 'this share body'.share(subject: 'subject');
 ```
 
-# Send whatsApp Message
+## Send whatsApp Message
 Send Whats App Message With the passed String as Message Body
 
 ```
@@ -120,7 +120,7 @@ Send Whats App Message With the passed String as Message Body
         .sendWhatsAppMessage(phone: '+2011111111');
 ```
 
-## toBase64
+# toBase64
 to base64 methods return base64 represintation of a file 
 
 ```
@@ -133,21 +133,21 @@ you can also get base64 from file path
 String base64 =path.toBase64;
 ```
 
-## Delay
+# Delay
 you can call delay on any `Int` number and select which value to delay with
 
 ```
 16.delay(milliseconds: true);
 ```
-## List Commons
+# List Commons
 
-# AddOrReplace
+## AddOrReplace
 Add value to list if dosn't exist else replace Current Value
 ```
 List<int> list = [10, 11, 15];
     list.addOrReplace(10);
 ```
-# Replace
+## Replace
 Set Value At index
 ```
 // (index,value)
@@ -155,25 +155,25 @@ List<int> list = [10, 11, 15];
     list.replace(1, 9);
 ```
 
-## Built With
+# Built With
 
-* [Flutter](http://www.flutter.dev/) - the frame work built for
+* [Flutter](http://www.flutter.dev/) - the framework built for
 
-## Contributing
+# Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
+# Authors
 
 * **Ahmed Beheiri** - *Initial work* - [DartCommons](https://github.com/AhmedBeheiri/dart_commons)
 
 See also the list of [contributors](https://github.com/AhmedBeheiri/dart_commons/graphs/contributors) who participated in this project.
 
-## License
+# License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+# Acknowledgments
  this package uses 
 * [logging](https://pub.dev/packages/logging)
 * [flutter_phone_direct_caller](https://pub.dev/packages/flutter_phone_direct_caller)
