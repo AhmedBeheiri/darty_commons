@@ -1,4 +1,4 @@
-library dart_commons;
+library darty_commons;
 
 import 'dart:convert';
 import 'dart:io';

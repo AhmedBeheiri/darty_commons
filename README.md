@@ -1,6 +1,6 @@
-# Dart Commons
+# Darty Commons
 
-Dart Commons is a Package that provides a punch of useful extension methods for every application functionalities (Inspired by Anko Commons in Kotlin)
+Darty Commons is a Package that provides a punch of useful extension methods for every application functionalities (Inspired by Anko Commons in Kotlin)
 this package will help you save some lines of code and make it easy to do repeated operations throughout your applications
 
 ## Getting Started
@@ -171,7 +171,7 @@ See also the list of [contributors](https://github.com/AhmedBeheiri/dart_commons
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 # Acknowledgments
  this package uses 

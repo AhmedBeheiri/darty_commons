@@ -112,10 +112,10 @@ def install_flutter_application_pod(flutter_application_path)
   # defined_in_file is set by CocoaPods and is a Pathname to the Podfile.
   project_directory_pathname = defined_in_file.dirname
   relative = current_directory_pathname.relative_path_from project_directory_pathname
-  pod 'dart_commons', :path => relative.to_s, :inhibit_warnings => true
+  pod 'darty_commons', :path => relative.to_s, :inhibit_warnings => true
 
   flutter_export_environment_path = File.join('${SRCROOT}', relative, 'flutter_export_environment.sh');
-  script_phase :name => 'Run Flutter Build dart_commons Script',
+  script_phase :name => 'Run Flutter Build darty_commons Script',
     :script => "set -e\nset -u\nsource \"#{flutter_export_environment_path}\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build",
     :input_files => [
       File.join('${SRCROOT}', flutter_application_path, '.metadata'),

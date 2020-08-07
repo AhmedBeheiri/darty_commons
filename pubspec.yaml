@@ -1,7 +1,6 @@
-name: dart_commons
+name: darty_commons
 description: common functions for dart 
 version: 0.1.0
-author: ahmed beheiri
 homepage: https://github.com/AhmedBeheiri/dart_commons
 documentation: https://github.com/AhmedBeheiri/dart_commons
 
@@ -12,9 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   logging: ^0.11.4
-  flutter_phone_direct_caller:
-    git:
-      url: https://github.com/yanisalfian/flutter-phone-direct-caller.git
+  flutter_phone_direct_caller: ^1.0.1
   url_launcher: ^5.5.0
   share: '>=0.6.4+3 <2.0.0'
 
