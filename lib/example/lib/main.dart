@@ -30,8 +30,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    context.ShowSnackBar('text',
-        duration: Duration(milliseconds: 500));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

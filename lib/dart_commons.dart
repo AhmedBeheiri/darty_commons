@@ -161,7 +161,7 @@ extension FileAnko on File {
 
 extension ContextAnko on BuildContext {
   ///? Show SnackBar from build context
-  void ShowSnackBar(
+  void showSnackBar(
     String text, {
     Duration duration = const Duration(milliseconds: 500),
   }) {
