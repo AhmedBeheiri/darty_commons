@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dart_commons/test_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
@@ -25,10 +27,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    16.0.log();
-    16.log(className: 'ClassName');
-    'error'.logError();
-    'Info'.log();
   }
 
   @override
