@@ -1,6 +1,6 @@
 name: darty_commons
-description: Darty Commons is a Package that provides a punch of useful extension methods for every application functionalities (Inspired by Anko Commons in Kotlin) this package will help you save some lines of code and make it easy to do repeated operations throughout your applications
-version: 0.1.1
+description: Darty Commons is a Package that provides a punch of useful extension methods for every application functionalities (Inspired by Anko Commons in Kotlin)
+version: 0.1.2
 homepage: https://github.com/AhmedBeheiri/dart_commons
 documentation: https://github.com/AhmedBeheiri/dart_commons
 
