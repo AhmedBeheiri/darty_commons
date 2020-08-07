@@ -53,10 +53,10 @@ packages:
   darty_commons:
     dependency: "direct main"
     description:
-      name: darty_commons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "0.1.4"
   fake_async:
     dependency: transitive
     description:

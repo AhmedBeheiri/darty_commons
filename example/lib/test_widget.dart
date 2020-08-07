@@ -1,4 +1,4 @@
-import 'package:darty_commons/dart_commons.dart';
+import 'package:darty_commons/darty_commons.dart';
 import 'package:flutter/material.dart';
 
 class TestWidget extends StatelessWidget {

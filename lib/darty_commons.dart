@@ -13,13 +13,11 @@ import 'package:url_launcher/url_launcher.dart';
 
 extension StringAnko on String {
   void log({String className}) {
-    Logger(className != null ? className : 'StringAnko')
-        .log(Level.INFO, this);
+    Logger(className != null ? className : 'StringAnko').log(Level.INFO, this);
   }
 
   void logError({String className}) {
-    Logger(className != null ? className : 'StringAnko')
-        .log(Level.SEVERE, this);
+    Logger(className != null ? className : 'StringAnko').log(Level.SEVERE, this);
   }
 
 //? String to Int
@@ -181,13 +179,11 @@ extension ContextAnko on BuildContext {
   }
 
   log(String message, {String className}) {
-    Logger(className != null ? className : 'StringAnko')
-        .log(Level.INFO, this);
+    Logger(className != null ? className : 'StringAnko').log(Level.INFO, this);
   }
 
   logError(String message, {String className}) {
-    Logger(className != null ? className : 'StringAnko')
-        .log(Level.SEVERE, this);
+    Logger(className != null ? className : 'StringAnko').log(Level.SEVERE, this);
   }
 }
 
@@ -213,25 +209,21 @@ extension IntExtension on int {
   }
 
   void log({String className}) {
-    Logger(className != null ? className : 'IntAnko')
-        .log(Level.INFO, this.toString());
+    Logger(className != null ? className : 'IntAnko').log(Level.INFO, this.toString());
   }
 
   void logError({String className}) {
-    Logger(className != null ? className : 'IntAnko')
-        .log(Level.SEVERE, this.toString());
+    Logger(className != null ? className : 'IntAnko').log(Level.SEVERE, this.toString());
   }
 }
 
 extension DoubleAnko on double {
   void log({String className}) {
-    Logger(className != null ? className : 'DoubleAnko')
-        .log(Level.INFO, this.toString());
+    Logger(className != null ? className : 'DoubleAnko').log(Level.INFO, this.toString());
   }
 
   void logError({String className}) {
-    Logger(className != null ? className : 'DoubleAnko')
-        .log(Level.SEVERE, this.toString());
+    Logger(className != null ? className : 'DoubleAnko').log(Level.SEVERE, this.toString());
   }
 }
 
