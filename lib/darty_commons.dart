@@ -1,5 +1,6 @@
 library darty_commons;
 
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -12,12 +13,13 @@ import 'package:url_launcher/url_launcher.dart';
 /// A Calculator.
 
 extension StringAnko on String {
-  void log({String className}) {
+  void log({String? className}) {
     Logger(className != null ? className : 'StringAnko').log(Level.INFO, this);
   }
 
-  void logError({String className}) {
-    Logger(className != null ? className : 'StringAnko').log(Level.SEVERE, this);
+  void logError({String? className}) {
+    Logger(className != null ? className : 'StringAnko')
+        .log(Level.SEVERE, this);
   }
 
 //? String to Int
@@ -47,7 +49,7 @@ extension StringAnko on String {
     Duration duration = const Duration(milliseconds: 500),
   }) {
     try {
-      Scaffold.of(context).showSnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
             this,
@@ -70,13 +72,13 @@ extension StringAnko on String {
   }
 
   /// ? Share Passed Text
-  void share({String subject}) {
+  void share({String? subject}) {
     Share.share(this, subject: subject);
   }
 
   /// ? Send Whats App Message With the passed String as Message Body
   void sendWhatsAppMessage({
-    String phone,
+    String? phone,
   }) async {
     String url() {
       if (Platform.isIOS) {
@@ -164,7 +166,7 @@ extension ContextAnko on BuildContext {
     Duration duration = const Duration(milliseconds: 500),
   }) {
     try {
-      Scaffold.of(this).showSnackBar(
+      ScaffoldMessenger.of(this).showSnackBar(
         SnackBar(
           content: Text(
             text,
@@ -178,19 +180,20 @@ extension ContextAnko on BuildContext {
     }
   }
 
-  log(String message, {String className}) {
+  log(String message, {String? className}) {
     Logger(className != null ? className : 'StringAnko').log(Level.INFO, this);
   }
 
-  logError(String message, {String className}) {
-    Logger(className != null ? className : 'StringAnko').log(Level.SEVERE, this);
+  logError(String message, {String? className}) {
+    Logger(className != null ? className : 'StringAnko')
+        .log(Level.SEVERE, this);
   }
 }
 
 extension IntExtension on int {
   /// ? Delay for the passed int value (Specify the required duration [days,hours,minutes,seconds,milliseconds,microseconds])
   delay(
-      {Function onCompleted,
+      {required FutureOr<dynamic> onCompleted(),
       bool days = false,
       bool hours = false,
       bool minutes = false,
@@ -208,27 +211,31 @@ extension IntExtension on int {
         onCompleted);
   }
 
-  void log({String className}) {
-    Logger(className != null ? className : 'IntAnko').log(Level.INFO, this.toString());
+  void log({String? className}) {
+    Logger(className != null ? className : 'IntAnko')
+        .log(Level.INFO, this.toString());
   }
 
-  void logError({String className}) {
-    Logger(className != null ? className : 'IntAnko').log(Level.SEVERE, this.toString());
+  void logError({String? className}) {
+    Logger(className != null ? className : 'IntAnko')
+        .log(Level.SEVERE, this.toString());
   }
 }
 
 extension DoubleAnko on double {
-  void log({String className}) {
-    Logger(className != null ? className : 'DoubleAnko').log(Level.INFO, this.toString());
+  void log({String? className}) {
+    Logger(className != null ? className : 'DoubleAnko')
+        .log(Level.INFO, this.toString());
   }
 
-  void logError({String className}) {
-    Logger(className != null ? className : 'DoubleAnko').log(Level.SEVERE, this.toString());
+  void logError({String? className}) {
+    Logger(className != null ? className : 'DoubleAnko')
+        .log(Level.SEVERE, this.toString());
   }
 }
 
 extension CollectionsExtentsions on List {
-  /// ? Add value to list if dosn't exist else replace Current Value
+  /// ? Add value to list if doesn't exist else replace Current Value
   void addOrReplace(model) {
     if (this.contains(model)) {
       this.insert(this.indexOf(model), model);
