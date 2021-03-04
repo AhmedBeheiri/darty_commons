@@ -28,7 +28,7 @@ No configuration required - the plugin should work out of the box.
 This Package Works on Dart >=2.7.0 make sure tou upgrade Your Sdk
 
 ```
-sdk: ">=2.7.0 <3.0.0"
+sdk: ">=2.12.0 <3.0.0"
 ```
 
 ### How To Use
