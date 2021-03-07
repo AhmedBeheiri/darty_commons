@@ -5,9 +5,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:logging/logging.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 /// A Calculator.
@@ -111,16 +110,16 @@ extension StringAnko on String {
   ///     ?<string>tel</string>
   ///   ?</array>
 
-  void call() async {
-    try {
-      bool res = await FlutterPhoneDirectCaller.callNumber(this);
-      if (!res) {
-        throw ('Invalid Phone Number');
-      }
-    } catch (e) {
-      Logger('StringAnko').severe('Invalid Phone Number : $e');
-    }
-  }
+  // void call() async {
+  //   try {
+  //     bool res = await FlutterPhoneDirectCaller.callNumber(this);
+  //     if (!res) {
+  //       throw ('Invalid Phone Number');
+  //     }
+  //   } catch (e) {
+  //     Logger('StringAnko').severe('Invalid Phone Number : $e');
+  //   }
+  // }
 
   /// ? Dial Phone Number
   void dial() async {
@@ -193,7 +192,7 @@ extension ContextAnko on BuildContext {
 extension IntExtension on int {
   /// ? Delay for the passed int value (Specify the required duration [days,hours,minutes,seconds,milliseconds,microseconds])
   delay(
-      {required FutureOr<dynamic> onCompleted(),
+      {FutureOr<dynamic> onCompleted()?,
       bool days = false,
       bool hours = false,
       bool minutes = false,

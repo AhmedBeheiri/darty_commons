@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
+
 import 'test_widget.dart';
 
 void main() {
@@ -17,8 +18,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-final GlobalKey<NavigatorState> mainNavigatorKey =
-    GlobalKey<NavigatorState>();
+final GlobalKey<NavigatorState> mainNavigatorKey = GlobalKey<NavigatorState>();
 
 class _MyAppState extends State<MyApp> {
   @override
@@ -30,8 +30,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          accentColor: Colors.blue, buttonColor: Color(0xFF5796ff)),
+      theme:
+          ThemeData(accentColor: Colors.blue, buttonColor: Color(0xFF5796ff)),
       home: TestWidget(),
     );
   }

@@ -8,16 +8,6 @@ this package will help you save some lines of code and make it easy to do repeat
 First, add `dart_commons` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 ### iOS
 
-## If You Will Use The Call Function  
-Add the following keys to your _Info.plist_ file, located in `<project root>/ios/Runner/Info.plist`:
-
-```
-<key>LSApplicationQueriesSchemes</key>
-<array>
-  <string>tel</string>
-</array>
-```
-
 ### Android
 
 No configuration required - the plugin should work out of the box.
@@ -25,7 +15,7 @@ No configuration required - the plugin should work out of the box.
 
 ### Prerequisites
 
-This Package Works on Dart >=2.7.0 make sure tou upgrade Your Sdk
+This Package Works on Dart >=2.12.0 make sure to upgrade Your Sdk
 
 ```
 sdk: ">=2.12.0 <3.0.0"
@@ -35,7 +25,7 @@ sdk: ">=2.12.0 <3.0.0"
 
 # Logging
 
-Logging Uses the `logging` package so you nedd to add this in the start of your application
+Logging Uses the `logging` package so you need to add this in the start of your application
 
 ```
 void main() {
@@ -69,13 +59,6 @@ snack bars can be shown on String and On BuildContext
 ```
 
 # String Commons
-
-## Call
-
-Call Function To Call Phone Number 
-```
-'+20123456789'.call();
-```
 
 ## Dial 
 dial opens the dial app with number in place without direct call
@@ -113,7 +96,7 @@ Share Passed Text
 ```
 
 ## Send whatsApp Message
-Send Whats App Message With the passed String as Message Body
+Send WhatsApp Message With the passed String as Message Body
 
 ```
     'Send Whats App Message With the passed String as Message Body'
@@ -121,7 +104,7 @@ Send Whats App Message With the passed String as Message Body
 ```
 
 # toBase64
-to base64 methods return base64 represintation of a file 
+to base64 methods return base64 representation of a file 
 
 ```
  File file = File(path);
@@ -142,7 +125,7 @@ you can call delay on any `Int` number and select which value to delay with
 # List Commons
 
 ## AddOrReplace
-Add value to list if dosn't exist else replace Current Value
+Add value to list if doesn't exist else replace Current Value
 ```
 List<int> list = [10, 11, 15];
     list.addOrReplace(10);
@@ -176,7 +159,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 # Acknowledgments
  this package uses 
 * [logging](https://pub.dev/packages/logging)
-* [flutter_phone_direct_caller](https://pub.dev/packages/flutter_phone_direct_caller)
 * [url_launcher](https://pub.dev/packages/url_launcher)
-* [share](https://pub.dev/packages/share)
+* [share_plus](https://pub.dev/packages/share_plus)
 

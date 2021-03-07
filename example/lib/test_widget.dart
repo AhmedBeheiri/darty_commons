@@ -36,8 +36,10 @@ class TestWidget extends StatelessWidget {
                   keyboardType: TextInputType.phone,
                   controller: _controller,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(16.0)),
-                    enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(16.0)),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16.0)),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16.0)),
                   ),
                 ),
                 Center(
@@ -51,28 +53,32 @@ class TestWidget extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                   controller: _emailController,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(16.0)),
-                    enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(16.0)),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16.0)),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16.0)),
                   ),
                 ),
                 Center(
                   child: RaisedButton(
-                    onPressed: () =>
-                        _emailController.text.email('ahmedbeheirii.com', subject: 'Hello'),
+                    onPressed: () => _emailController.text
+                        .email('ahmedbeheirii.com', subject: 'Hello'),
                     child: Text('Send an Email'),
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Center(
                   child: RaisedButton(
-                    onPressed: () => _emailController.text.sendWhatsAppMessage(),
+                    onPressed: () =>
+                        _emailController.text.sendWhatsAppMessage(),
                     child: Text('Send a What App Message'),
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Center(
                   child: RaisedButton(
-                    onPressed: () => _emailController.text.share(subject: 'look guys'),
+                    onPressed: () =>
+                        _emailController.text.share(subject: 'look guys'),
                     child: Text('Share Text'),
                   ),
                 ),

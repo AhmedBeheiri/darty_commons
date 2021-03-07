@@ -1,3 +1,7 @@
+##[0.1.7] - 03/2021.
+
+* Support All Platforms
+
 ## [0.1.6] - 03/2021.
 
 * Null safety.
