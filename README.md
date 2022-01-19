@@ -48,7 +48,8 @@ you can use the logging as follows
 
 # SnackBar
 snack bars can be shown on String and On BuildContext
- `duration` param is optional
+ `duration` param is optional 
+also you can customize the snack bar by passing `backgroundColor`,`TextStyle`,`TextDirection` params
 
 ```
 // If you called show snack bar on context you need to provide the text  
@@ -56,6 +57,10 @@ snack bars can be shown on String and On BuildContext
         duration: Duration(milliseconds: 500));
 // If you called show snack bar on string you need to provide the build context  
         'this is example'.showSnackBar(context,duration: Duration(milliseconds: 500));
+        
+// or you can use show Error snack bar for handling error messages
+     context.showErrorSnackBar('text',
+        duration: Duration(milliseconds: 500));    
 ```
 
 # String Commons

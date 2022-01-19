@@ -46,19 +46,46 @@ extension StringAnko on String {
   void showSnackBar(
     BuildContext context, {
     Duration duration = const Duration(milliseconds: 500),
+        TextStyle? style,
+        Color? backgroundColor,
+        TextDirection? direction,
   }) {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
+          backgroundColor: backgroundColor?? Colors.white,
           content: Text(
             this,
-            style: TextStyle(color: Colors.white),
+            textDirection: direction,
+            style: style ??TextStyle(color: Colors.white),
           ),
           duration: duration,
         ),
       );
     } catch (e) {
       Logger('SnackBar').severe(e);
+    }
+  }
+  void showErrorSnackBar(
+      BuildContext context, {
+        Duration duration = const Duration(milliseconds: 500),
+        Color? backgroundColor,
+        TextDirection? direction,
+      }) {
+    try {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: backgroundColor ?? Colors.white,
+          content: Text(
+            this,
+            textDirection: direction,
+            style:TextStyle(color: Colors.red),
+          ),
+          duration: duration,
+        ),
+      );
+    } catch (e) {
+      Logger('ErrorSnackBar').severe(e);
     }
   }
 
@@ -161,21 +188,48 @@ extension FileAnko on File {
 extension ContextAnko on BuildContext {
   ///? Show SnackBar from build context
   void showSnackBar(
-    String text, {
-    Duration duration = const Duration(milliseconds: 500),
-  }) {
+      String text, {
+        Duration duration = const Duration(milliseconds: 500),
+        TextStyle? style,
+        Color? backgroundColor,
+        TextDirection? direction,
+      }) {
     try {
       ScaffoldMessenger.of(this).showSnackBar(
         SnackBar(
+          backgroundColor: backgroundColor?? Colors.white,
           content: Text(
             text,
-            style: TextStyle(color: Colors.white),
+            textDirection: direction,
+            style: style ??TextStyle(color: Colors.white),
           ),
           duration: duration,
         ),
       );
     } catch (e) {
       Logger('SnackBar').severe(e);
+    }
+  }
+  void showErrorSnackBar(
+     String text, {
+        Duration duration = const Duration(milliseconds: 500),
+        Color? backgroundColor,
+        TextDirection? direction,
+      }) {
+    try {
+      ScaffoldMessenger.of(this).showSnackBar(
+        SnackBar(
+          backgroundColor: backgroundColor ?? Colors.white,
+          content: Text(
+            text,
+            textDirection: direction,
+            style:TextStyle(color: Colors.red),
+          ),
+          duration: duration,
+        ),
+      );
+    } catch (e) {
+      Logger('ErrorSnackBar').severe(e);
     }
   }
 
