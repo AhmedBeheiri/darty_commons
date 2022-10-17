@@ -40,9 +40,10 @@ you can use the logging as follows
 
 ```
     16.0.log();
-    16.log(className: 'ClassName');
+    16.log(tag: 'ClassName');
     'error'.logError();
     'Info'.log();
+    true.log();
     context.log('message');
 ```
 

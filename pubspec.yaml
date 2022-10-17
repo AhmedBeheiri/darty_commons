@@ -1,20 +1,21 @@
 name: darty_commons
 description: Darty Commons is a Package that provides a punch of useful extension methods for every application functionalities (Inspired by Anko Commons in Kotlin)
-version: 0.1.8
+version: 1.0.0
 homepage: https://github.com/AhmedBeheiri/dart_commons
 documentation: https://github.com/AhmedBeheiri/dart_commons
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.18.2 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  logging: ^1.0.2
-  url_launcher: ^6.0.18
-  share_plus: ^3.0.4
+  logging: ^1.1.0
+  url_launcher: ^6.1.6
+  share_plus: ^5.0.0
 
 dev_dependencies:
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
 

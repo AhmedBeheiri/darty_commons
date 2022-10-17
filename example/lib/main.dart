@@ -30,8 +30,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme:
-          ThemeData(accentColor: Colors.blue, buttonColor: Color(0xFF5796ff)),
+      theme: ThemeData(
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Colors.blue)),
       home: TestWidget(),
     );
   }

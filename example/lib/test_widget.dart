@@ -43,7 +43,7 @@ class TestWidget extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () => _controller.text.dial(),
                     child: Text('Call Number'),
                   ),
@@ -60,7 +60,7 @@ class TestWidget extends StatelessWidget {
                   ),
                 ),
                 Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () => _emailController.text
                         .email('ahmedbeheirii.com', subject: 'Hello'),
                     child: Text('Send an Email'),
@@ -68,7 +68,7 @@ class TestWidget extends StatelessWidget {
                 ),
                 SizedBox(height: 16.0),
                 Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () =>
                         _emailController.text.sendWhatsAppMessage(),
                     child: Text('Send a What App Message'),
@@ -76,7 +76,7 @@ class TestWidget extends StatelessWidget {
                 ),
                 SizedBox(height: 16.0),
                 Center(
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () =>
                         _emailController.text.share(subject: 'look guys'),
                     child: Text('Share Text'),

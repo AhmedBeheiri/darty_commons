@@ -1,3 +1,11 @@
+##[1.0.0] - 10/2022
+* breaking changes for the logging functions
+* new project structure
+* logs for bool
+* upgrade to the latest update
+* make a working example again
+* added exception structure
+* First Stable release
 ##[0.1.8] - 01/2022.
 * More Customizable SnackBars
 * Upgrade to the latest updates
