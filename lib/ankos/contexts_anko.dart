@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
@@ -50,11 +52,27 @@ extension ContextAnko on BuildContext {
     }
   }
 
-  log(String message, {String? tag}) {
-    Logger(tag ?? 'StringAnko').log(Level.INFO, this);
+  void log(String message,
+      {String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.INFO, message, error, stackTrace, zone);
   }
 
-  logError(String message, {String? tag}) {
-    Logger(tag ?? 'StringAnko').log(Level.SEVERE, this);
+  void logError(String message,
+      {String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.SEVERE, message, error, stackTrace, zone);
+  }
+
+  void logWarning(String message,
+      {String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.WARNING, message, error, stackTrace, zone);
+  }
+
+  void logOther(String message,
+      {String? tag,
+      required Level level,
+      Object? error,
+      StackTrace? stackTrace,
+      Zone? zone}) {
+    Logger(tag ?? 'TAG').log(level, message, error, stackTrace, zone);
   }
 }

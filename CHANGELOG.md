@@ -1,3 +1,8 @@
+##[1.0.1] - 02/2023
+* added logs with custom levels
+* added error and stacktrace to logs
+* upgrade to the latest update
+
 ##[1.0.0] - 10/2022
 * breaking changes for the logging functions
 * new project structure

@@ -1,7 +1,5 @@
 library darty_commons;
 
-
-
 export 'ankos/strings_anko.dart';
 export 'ankos/booleans_anko.dart';
 export 'ankos/collections_anko.dart';

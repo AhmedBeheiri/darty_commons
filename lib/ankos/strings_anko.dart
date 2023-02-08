@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -7,16 +8,27 @@ import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 extension StringAnko on String {
-  void log({String? tag}) {
-    Logger(tag ?? 'TAG').log(Level.INFO, this);
+  void log({String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.INFO, this, error, stackTrace, zone);
   }
 
-  void logError({String? tag}) {
-    Logger(tag ?? 'TAG').log(Level.SEVERE, this);
+  void logError(
+      {String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.SEVERE, this, error, stackTrace, zone);
   }
 
-  void logWarning({String? tag}) {
-    Logger(tag ?? 'TAG').log(Level.WARNING, this);
+  void logWarning(
+      {String? tag, Object? error, StackTrace? stackTrace, Zone? zone}) {
+    Logger(tag ?? 'TAG').log(Level.WARNING, this, error, stackTrace, zone);
+  }
+
+  void logOther(
+      {String? tag,
+      required Level level,
+      Object? error,
+      StackTrace? stackTrace,
+      Zone? zone}) {
+    Logger(tag ?? 'TAG').log(level, this, error, stackTrace, zone);
   }
 
 //? String to Int

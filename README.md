@@ -41,7 +41,7 @@ you can use the logging as follows
 ```
     16.0.log();
     16.log(tag: 'ClassName');
-    'error'.logError();
+    'error'.logError(error: 'error', stackTrace: StackTrace.current);
     'Info'.log();
     true.log();
     context.log('message');
