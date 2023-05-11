@@ -1,4 +1,8 @@
-##[1.0.1] - 02/2023
+##[1.0.2] - 05/2023
+* upgrade to the latest update
+
+
+* ##[1.0.1] - 02/2023
 * added logs with custom levels
 * added error and stacktrace to logs
 * upgrade to the latest update
